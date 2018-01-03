@@ -13,6 +13,8 @@ import javax.inject.Singleton
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * This is the main injection class that injects 'MainApp' Activities, and android modules.
  */
 @Singleton
 @Component(modules = arrayOf(

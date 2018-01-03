@@ -14,6 +14,8 @@ import javax.inject.Inject
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * Main heart of the activity
  */
 
 class MainApp : Application(), HasActivityInjector {

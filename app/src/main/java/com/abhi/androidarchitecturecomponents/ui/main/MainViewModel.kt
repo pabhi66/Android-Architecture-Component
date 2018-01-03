@@ -12,6 +12,9 @@ import javax.inject.Inject
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * Main view model class that has all the logic of what the main activity/fragment should do
+ * and does not contain any UI views.
  */
 
 class MainViewModel @Inject constructor(private val fakePostRepository: FakePostRepository): ViewModel() {

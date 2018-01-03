@@ -16,6 +16,8 @@ import com.emrekose.karchi.ui.main.PostDiffCallback
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/3/18.
+ *
+ * recycler view adapter
  */
 
 class PostListRecyclerAdapter(var callback: PostCallback) : RecyclerView.Adapter<PostListRecyclerAdapter.PostViewHolder>() {

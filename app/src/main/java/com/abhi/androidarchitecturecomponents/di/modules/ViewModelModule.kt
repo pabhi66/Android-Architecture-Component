@@ -13,6 +13,8 @@ import dagger.multibindings.IntoMap
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * this will inject/binds all the view models in our app
  */
 
 @Module
@@ -21,7 +23,7 @@ abstract class ViewModelModule {
     @Binds
     @IntoMap
     @ViewModelKey(MainViewModel::class)
-    abstract fun bindsRepoListViewModel(repoListViewModel: MainViewModel): ViewModel
+    abstract fun bindsMainViewModel(MainViewModel: MainViewModel): ViewModel
 
     @Binds
     abstract fun bindsViewModelFactory(vmFactory: VMFactory): ViewModelProvider.Factory

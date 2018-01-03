@@ -9,6 +9,8 @@ import com.abhi.androidarchitecturecomponents.data.local.entity.FakePost
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * This class creates the database and brings all the pieces of 'Room' together
  */
 
 @Database(entities = arrayOf(FakePost::class), version = 1, exportSchema = false)

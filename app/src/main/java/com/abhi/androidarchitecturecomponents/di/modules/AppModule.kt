@@ -21,6 +21,8 @@ import javax.inject.Singleton
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * this class has all the dependencies that we need through the lifecycle of our app
  */
 
 @Module(includes = arrayOf(ViewModelModule::class))

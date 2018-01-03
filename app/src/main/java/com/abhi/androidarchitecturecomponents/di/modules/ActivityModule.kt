@@ -8,6 +8,8 @@ import dagger.android.ContributesAndroidInjector
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * this class will include all activities in our app
  */
 @Module
 abstract class ActivityModule {

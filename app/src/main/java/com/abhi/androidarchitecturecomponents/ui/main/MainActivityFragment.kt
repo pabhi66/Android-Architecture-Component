@@ -14,7 +14,11 @@ import com.abhi.androidarchitecturecomponents.ui.base.BaseFragment
 import com.emrekose.karchi.ui.main.PostCallback
 
 /**
- * A placeholder fragment containing a simple view.
+ * @author Abhishek Prajapati
+ * @version 1.0.0
+ * @since 1/2/18.
+ *
+ * This is a main fragment that is attached to main activity (through xml)
  */
 class MainActivityFragment : BaseFragment<MainViewModel, FragmentMainBinding>(), PostCallback {
 

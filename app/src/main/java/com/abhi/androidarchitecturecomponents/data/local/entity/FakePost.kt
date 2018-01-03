@@ -7,6 +7,15 @@ import android.os.Parcelable
 import com.abhi.androidarchitecturecomponents.util.createParcel
 import com.google.gson.annotations.SerializedName
 
+/**
+ * @author Abhishek Prajapati
+ * @version 1.0.0
+ * @since 1/2/18.
+ *
+ * model class represents the model for the post data in the database
+ * This class is responsible for creating a table name "posts" in the database
+ * It has four columns: "id", "title", "body", "userID"
+ */
 @Entity(tableName = "posts")
 data class FakePost(
 

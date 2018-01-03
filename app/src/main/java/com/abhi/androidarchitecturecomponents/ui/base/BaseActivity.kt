@@ -17,26 +17,40 @@ import javax.inject.Inject
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * This is a base class of activity which will extends all activities in the app
  */
 abstract class BaseActivity<DB: ViewDataBinding>: AppCompatActivity(), HasSupportFragmentInjector {
 
+    // android injector
     @Inject
     lateinit var fragmentDispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>
 
+    // data binding instance
     lateinit var dataBinding: DB
 
+    /**
+     * get activity layout
+     */
     @LayoutRes
     abstract fun getLayoutRes(): Int
 
+    /**
+     * get menu
+     */
     @MenuRes
     open fun getMenuRes(): Int = 0
 
+    /**
+     * override on create method that injects this activity and sets data binding view
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
         dataBinding = DataBindingUtil.setContentView(this, getLayoutRes())
     }
 
+    // fragment injector
     override fun supportFragmentInjector(): AndroidInjector<Fragment> = fragmentDispatchingAndroidInjector
 
 }

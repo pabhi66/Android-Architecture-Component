@@ -2,7 +2,13 @@ package com.abhi.androidarchitecturecomponents.util
 
 import android.os.Parcel
 import android.os.Parcelable
-
+/**
+ * @author Abhishek Prajapati
+ * @version 1.0.0
+ * @since 1/2/18.
+ *
+ * creates and read from parcel
+ */
 // Inline function to create Parcel Creator
 inline fun <reified T : Parcelable> createParcel(crossinline createFromParcel: (Parcel) -> T?): Parcelable.Creator<T> =
         object : Parcelable.Creator<T> {

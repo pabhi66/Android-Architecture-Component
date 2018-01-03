@@ -12,6 +12,8 @@ import javax.inject.Inject
  * @author Abhishek Prajapati
  * @version 1.0.0
  * @since 1/2/18.
+ *
+ * this is a manager class that handles all the api calls and updates the database
  */
 
 class FakePostRepository @Inject constructor(private val fakeApiService: FakeApiService, private val fakePostDao: FakePostDao) {
