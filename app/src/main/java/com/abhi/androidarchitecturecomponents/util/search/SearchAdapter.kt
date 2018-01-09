@@ -21,7 +21,6 @@ import android.widget.TextView
  */
 class SearchAdapter:BaseAdapter, Filterable {
 
-
     private var data:ArrayList<String>? = null
     private var suggestions: Array<String>? = null
     private var suggestionIcon: Drawable? = null
