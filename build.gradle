@@ -28,7 +28,7 @@ task clean(type: Delete) {
 
 ext {
     configuration = [
-            package          : "com.emrekose.karchi",
+            package          : "com.abhi.androidArchComp",
             compileSdkVersion: 27,
             targetSdkVersion : 27,
             minSdkVersion    : 15,
